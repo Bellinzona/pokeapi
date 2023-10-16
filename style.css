@@ -1,0 +1,192 @@
+* {
+	box-sizing:border-box ;
+
+
+}
+html{
+	scroll-behavior: smooth;
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat',sans-serif;
+    background-color: rgb(0, 0, 0);
+    transition: all 3s;
+
+}
+
+
+
+h1 {font-size: 9,5em;}
+h2 {font-size: 2,7em}
+h3 {font-size: 2em}
+p  {font-size: 1,25em}
+
+
+
+@keyframes colores {
+    0% {
+        background-color: white;
+    }
+    10% {
+        background-color: rgb(218, 145, 145);
+    }
+    15% {
+        background-color: rgb(237, 40, 40);
+    }
+    20% {
+        background-color: rgb(176, 125, 42);
+    }
+    25% {
+        background-color: rgb(238, 180, 86);
+    }
+    30% {
+        background-color: rgb(207, 241, 84);
+    }
+    35% {
+        background-color: rgb(98, 169, 22);
+    }
+    40% {
+        background-color: rgb(19, 94, 235);
+    }
+    45% {
+        background-color: rgb(0, 0, 255);
+    }
+    50% {
+        background-color: rgb(111, 20, 141);
+    }
+    55% {
+        background-color: rgb(255, 0, 0);
+    }
+    60% {
+        background-color: rgb(255, 192, 0);
+    }
+    65% {
+        background-color: rgb(0, 128, 0);
+    }
+    70% {
+        background-color: rgb(0, 0, 255);
+    }
+    75% {
+        background-color: rgb(128, 0, 128);
+    }
+    80% {
+        background-color: rgb(255, 0, 0);
+    }
+    85% {
+        background-color: rgb(255, 128, 0);
+    }
+    90% {
+        background-color: rgb(0, 128, 0);
+    }
+    95% {
+        background-color: rgb(0, 0, 128);
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes incorrecto {
+    0%{
+        background-color: red;
+    }
+
+    50%{
+        background-color: rgba(255, 0, 0, 0.434);
+    }
+
+    100%{
+        background-color: rgba(255, 0, 0, 0.075);
+    }
+    
+}
+
+
+.container{
+    display: flex;
+    width: 450px;
+    height: 100px;
+    border: 1px solid rgba(93, 90, 90, 0.472);
+    margin: 15vh auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 0;
+    transition: all 5s;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.inputpoke{
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    height: 40px;
+    margin: 20px auto;
+    transition: all 5s;
+
+}
+
+.inputpoke input{
+    padding: 12px 20px ;
+    background-color: rgba(128, 128, 128, 0.116);
+    border-style: none;
+    border-radius: 5px;
+    border: 1px solid rgba(102, 99, 99, 0.359);
+}
+
+.inputpoke button{
+    padding: 0 12px;
+    border-radius: 20px;
+    border-style: none ;
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+
+.inputpoke button:hover{
+    background-color: transparent;
+    animation: colores 20s linear infinite;
+}
+
+.incorrecto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 70px;
+    border-radius: 10px;
+    margin: 10px auto;
+    background-color: transparent;
+    animation: incorrecto 2.5s linear infinite;
+    display: none;
+}
+
+.incorrecto p{
+    color: white;
+    font-size: 20px;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+
+.informacion img{
+    width: 240px;
+}
+
+.informacion h1{
+    font-size: 40px;
+
+}
