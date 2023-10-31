@@ -190,3 +190,41 @@ p  {font-size: 1,25em}
     font-size: 40px;
 
 }
+
+
+.pokemonesBuscados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 450px;
+    display: none;
+    
+}
+
+.pokemonG{
+    display: flex;
+    flex-direction: row;
+    width: 90% ;
+    margin: 5px;
+    height: 60px;
+    border: 1px solid rgba(127, 124, 124, 0.55);
+    background-color: rgba(194, 188, 188, 0.656);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.pokemonG img{
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+    
+}
+
+.pokemonG p{
+    margin: auto 10px ;
+}
